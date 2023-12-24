@@ -1,9 +1,9 @@
 services:
   postgres:
-    image: 'postgres:latest'
+    image: 'postgres:15'
     environment:
-      - 'POSTGRES_DB=mydatabase'
-      - 'POSTGRES_PASSWORD=secret'
-      - 'POSTGRES_USER=myuser'
+      - 'POSTGRES_DB=mydb'
+      - 'POSTGRES_PASSWORD=dbpass'
+      - 'POSTGRES_USER=dbuser'
     ports:
-      - '5432'
+      - '5051:5432'

@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HiTestcontainersApplication {
+public class TestContainers {
 
     public static void main(String[] args) {
-        SpringApplication.run(HiTestcontainersApplication.class, args);
+        SpringApplication.run(TestContainers.class, args);
     }
-
 }

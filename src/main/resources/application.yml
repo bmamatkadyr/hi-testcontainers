@@ -1,1 +1,14 @@
-
+server:
+  port: 8800
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5051/mydb
+    username: dbuser
+    password: dbpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: on
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  sql.init.mode: always
